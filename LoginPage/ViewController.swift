@@ -19,6 +19,11 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+     
+        users["emma"] = "135"
+        for (tentaikhoan, password) in users {
+            print("\(tentaikhoan): \(password)")
+        }
     }
 
     
