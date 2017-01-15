@@ -21,10 +21,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
      
         users["emma"] = "135"
-        for (tentaikhoan, password) in users {
-            print("\(tentaikhoan): \(password)")
+        
         }
-    }
 
     
     @IBAction func action_login(_ sender: Any) {
@@ -50,11 +48,12 @@ class ViewController: UIViewController {
     }
     
     @IBAction func action_list(_ sender: Any) {
+        
+        for (tentaikhoan, password) in users {
+            print("\(tentaikhoan): \(password)")
     }
     
    
 
-
-
 }
-
+}
